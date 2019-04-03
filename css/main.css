@@ -1822,7 +1822,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #c896ff;
+  background: #0d6a06;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2920,4 +2920,10 @@ hr {
 .links-of-author a:before,
 .links-of-author .exturl:before {
   display: none;
+}
+.sidebar-toggle {
+  left: 30px;
+}
+.sidebar {
+  left: 0px;
 }
