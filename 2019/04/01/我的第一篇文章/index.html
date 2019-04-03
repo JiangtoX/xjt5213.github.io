@@ -366,6 +366,20 @@
     </div>
 
   
+   <div id="gitmentContainer"></div>
+   <link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+   <script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+   <script>
+   var gitment = new Gitment({
+       owner: 'JiangtoX',
+       repo: 'comment',
+       oauth: {
+           client_id: 'dbc789d55776b62574af',
+           client_secret: 'f8bfe809dec0b044d2bda3473d23cb85b7b2e0f2',
+       },
+   });
+   gitment.render('gitmentContainer');
+   </script>
 
 
 
