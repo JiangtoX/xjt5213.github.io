@@ -86,7 +86,7 @@
 <meta property="og:site_name" content="xjt5213--前端随笔">
 <meta property="og:description" content="历经各种艰难险阻（其实是自己太水），才完成这个blog的搭建，可以说是一个小小白了，搭建的过程中各种碰壁，不过最终还是完了，感觉内心还是蛮有成就感的，最近在开始接触前端知识，以后这个地方就作为我写一点学习笔记的地方吧，分享算不上，前面说了是小小白哈哈哈。目前大四，正处于找工作的黄金时期，其实静下心来学习是一件非常不容易的事情，当你的同学室友都纷纷出去找工作实习去了，而你还在上课，其实我的内心是非常">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-04-03T02:44:27.378Z">
+<meta property="og:updated_time" content="2019-04-03T05:57:40.932Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="开篇随笔">
 <meta name="twitter:description" content="历经各种艰难险阻（其实是自己太水），才完成这个blog的搭建，可以说是一个小小白了，搭建的过程中各种碰壁，不过最终还是完了，感觉内心还是蛮有成就感的，最近在开始接触前端知识，以后这个地方就作为我写一点学习笔记的地方吧，分享算不上，前面说了是小小白哈哈哈。目前大四，正处于找工作的黄金时期，其实静下心来学习是一件非常不容易的事情，当你的同学室友都纷纷出去找工作实习去了，而你还在上课，其实我的内心是非常">
@@ -615,6 +615,28 @@
 
 
 
+
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+  
+  <script type="text/javascript">
+    var GUEST = ['nick','mail','link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item=>{
+      return GUEST.indexOf(item)>-1;
+    });
+    new Valine({
+        el: '#comments' ,
+        verify: false,
+        notify: false,
+        appId: 'k1xVt8K8AirGaR5FKhNwKM0h-gzGzoHsz',
+        appKey: 'eL0WRD6z3w6vBJN7xzJ8v7Ew',
+        placeholder: 'Just go go',
+        avatar:'wavatar',
+        guest_info:guest,
+        pageSize:'10' || 10,
+    });
+  </script>
 
 
 
