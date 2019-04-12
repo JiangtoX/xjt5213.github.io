@@ -135,7 +135,7 @@
 <meta property="og:image" content="https://i.loli.net/2019/04/12/5cb03daf9dc49.png">
 <meta property="og:image" content="https://i.loli.net/2019/04/12/5cb03ffd770a4.png">
 <meta property="og:image" content="https://i.loli.net/2019/04/12/5cb041ed7dfcd.png">
-<meta property="og:updated_time" content="2019-04-12T07:50:16.653Z">
+<meta property="og:updated_time" content="2019-04-12T07:58:34.644Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="清除浮动的几种方法">
 <meta name="twitter:description" content="今天在班上分享几种清除浮动的方法，讲到一半突然忘了，贼尴尬，于是自己在网上找了几种解决办法来清除浮动 先看一段代码—-html 123456&amp;lt;body&amp;gt;    &amp;lt;div class=&quot;myDiv&quot;&amp;gt;        &amp;lt;div class=&quot;myDiv01&quot;&amp;gt;&amp;lt;/div&amp;gt;        &amp;lt;div class=&quot;myDiv02&quot;&amp;gt;&amp;lt;/di">
@@ -456,7 +456,7 @@
 <p>上面代码中我分别给了两个子div一个<code>float：left;</code>于是他们就向左浮动，出现在一行了；看看下图效果</p>
 <p><img src="https://i.loli.net/2019/04/12/5cb03649c9429.png" alt="1"></p>
 <p>从中可以看到，当我给两个子div分别设置向左浮动之后，可以看看右下角的盒子模型，父div的高度变成了0，这是为什么呢？</p>
-<p style="font-size:18px;font-weight:blod;color:yellow;">情况是这样的，当我们分别给两个子div设置<code>float:left;</code>之后，父就会脱离文档流，不在占有页面位置了，所以我们看到的高度为0了</p>
+<p style="font-size:18px;font-weight:blod;background-color:yellow;">情况是这样的，当我们分别给两个子div设置<code>float:left;</code>之后，父就会脱离文档流，不在占有页面位置了，所以我们看到的高度为0了</p>
 
 <p>那么我们应该怎样解决这种情况呢（在不删除<code>float:left;</code>的情况下）？？</p>
 <p>在网上找了几种解决办法：</p>
