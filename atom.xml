@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://www.xjt5213.club/"/>
-  <updated>2019-06-20T10:31:51.401Z</updated>
+  <updated>2019-06-27T05:59:20.802Z</updated>
   <id>https://www.xjt5213.club/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Linux命令学习</title>
+    <link href="https://www.xjt5213.club/2019/06/27/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/"/>
+    <id>https://www.xjt5213.club/2019/06/27/linux常用命令/</id>
+    <published>2019-06-26T16:00:00.000Z</published>
+    <updated>2019-06-27T05:59:20.802Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="话不多说直接上命令哈哈哈哈"><a href="#话不多说直接上命令哈哈哈哈" class="headerlink" title="话不多说直接上命令哈哈哈哈"></a>话不多说直接上命令哈哈哈哈</h3><p>Linux常用命令</p><p><strong>1.</strong> <strong>目录操作命令</strong></p><p>\1. ls:显示当前目录下的文件（不包含隐藏文件）</p><p>\2. ls 目录名：显示指定目录下的文件</p><p>\3. ls -l :列出文件的详细信息</p><p>\4. ls -l 文件名：显示指定文件的详细信息</p><p>\5. ls -a:显示当前目录下的所有文件（包含了隐藏文件）</p><p>\6. cd 绝对路径：进入到指定路径</p><p>\7. cd ~ : 进入到当前用户的家目录</p><p>\8. cd .. : 进入到上一级目录</p><p>\9. cd / : 返回根目录</p><p>\10. cd ./当前目录下的其他文件夹:进入当前目录下的其他目录</p><p>\11. pwd : 显示当前所在的目录 </p><p>\12. mkdir 自定义目录名：例如-mkdir test 在当前目录下创建名为test的目录</p><p>\13. mkdir -p 递归路径：例如mkdir -p test1/test2/test3 </p><p>\14. rmdir 目录名 ：删除目录（只能删除空目录）</p><p><strong>2.</strong> <strong>文件操作命令</strong></p><p>\1. touch: 创建空文件（文件不存在时）或者修改文件时间（文件存在时修改文件时间）</p><p>\2. rm 文件名：删除文件</p><p>\3. rm -f 文件名：强制删除文件</p><p>\4. rm -rf 目录名：强制删除目录和文件</p><p>\5. cat 文件名：查看文件内容</p><p>\6. cp 源文件 目标位置：复制文件到指定目录</p><p>\7. cp -r 目录名 目标位置：复制目录到指定目录</p><p>\8. mv 源文件 目标位置：</p><p>例如：mv /root/test  /tmp/ 将/root/下的test文件移动到/tmp/目录下</p><p>mv /root/test  /root/newtest 将/root/下的test文件改名为newtest</p><p><strong>3.</strong> <strong>查找命令</strong></p><p>\1. find 查找位置 -name 文件名：</p><p>\2. whereis 文件名：查找文件，同时列出文件路径</p><p>\3. Which ：用于查找可执行命令，只能查找可执行文件， 例如which ls </p><p><strong>4.</strong> <strong>编辑命令</strong></p><p>\1. Vi 文件名：编辑文件</p><p>\1. Ins 进入编辑模式</p><p>\2. Esc 退出编辑模式，进入命令模式</p><p>\3. <img src="file:///C:\Users\xjt5213\AppData\Local\Temp\ksohtml7256\wps1.jpg" alt="img"></p><p>\2. vim 文件名：用法与vi类似</p><p>\3. nano 文件名：</p><p><img src="file:///C:\Users\xjt5213\AppData\Local\Temp\ksohtml7256\wps2.jpg" alt="img"> </p><p>\4. 换源</p><p>Yum工具：换源路径：</p><p>/etc/yum.repos.d/CentOS-Base.repo</p><p>yum makecache：更新软件包缓存</p><p>Apt工具：换源路径：</p><p>/etc/apt/sources.list</p><p> Apt-get update :更新缓存</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h3 id=&quot;话不多说直接上命令哈哈哈哈&quot;&gt;&lt;a href=&quot;#话不多说直接上命令哈哈哈哈&quot; class=&quot;headerlink&quot; title=&quot;话不多说直接上命令哈哈哈哈&quot;&gt;&lt;/a&gt;话不多说直接上命令哈哈哈哈&lt;/h3&gt;&lt;p&gt;Linux常用命令&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;1
+      
+    
+    </summary>
+    
+    
+      <category term="学习笔记" scheme="https://www.xjt5213.club/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+  </entry>
   
   <entry>
     <title>HTML/CSS基础总结（1）</title>

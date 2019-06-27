@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[Linux命令学习]]></title>
+    <url>%2F2019%2F06%2F27%2Flinux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%2F</url>
+    <content type="text"><![CDATA[话不多说直接上命令哈哈哈哈Linux常用命令 1. 目录操作命令 \1. ls:显示当前目录下的文件（不包含隐藏文件） \2. ls 目录名：显示指定目录下的文件 \3. ls -l :列出文件的详细信息 \4. ls -l 文件名：显示指定文件的详细信息 \5. ls -a:显示当前目录下的所有文件（包含了隐藏文件） \6. cd 绝对路径：进入到指定路径 \7. cd ~ : 进入到当前用户的家目录 \8. cd .. : 进入到上一级目录 \9. cd / : 返回根目录 \10. cd ./当前目录下的其他文件夹:进入当前目录下的其他目录 \11. pwd : 显示当前所在的目录 \12. mkdir 自定义目录名：例如-mkdir test 在当前目录下创建名为test的目录 \13. mkdir -p 递归路径：例如mkdir -p test1/test2/test3 \14. rmdir 目录名 ：删除目录（只能删除空目录） 2. 文件操作命令 \1. touch: 创建空文件（文件不存在时）或者修改文件时间（文件存在时修改文件时间） \2. rm 文件名：删除文件 \3. rm -f 文件名：强制删除文件 \4. rm -rf 目录名：强制删除目录和文件 \5. cat 文件名：查看文件内容 \6. cp 源文件 目标位置：复制文件到指定目录 \7. cp -r 目录名 目标位置：复制目录到指定目录 \8. mv 源文件 目标位置： 例如：mv /root/test /tmp/ 将/root/下的test文件移动到/tmp/目录下 mv /root/test /root/newtest 将/root/下的test文件改名为newtest 3. 查找命令 \1. find 查找位置 -name 文件名： \2. whereis 文件名：查找文件，同时列出文件路径 \3. Which ：用于查找可执行命令，只能查找可执行文件， 例如which ls 4. 编辑命令 \1. Vi 文件名：编辑文件 \1. Ins 进入编辑模式 \2. Esc 退出编辑模式，进入命令模式 \3. \2. vim 文件名：用法与vi类似 \3. nano 文件名： \4. 换源 Yum工具：换源路径： /etc/yum.repos.d/CentOS-Base.repo yum makecache：更新软件包缓存 Apt工具：换源路径： /etc/apt/sources.list Apt-get update :更新缓存]]></content>
+      <tags>
+        <tag>学习笔记</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[HTML/CSS基础总结（1）]]></title>
     <url>%2F2019%2F06%2F20%2Fhtmlcss%E9%9D%A2%E8%AF%95%E5%9F%BA%E7%A1%80%E9%A2%98%EF%BC%881%EF%BC%89%2F</url>
     <content type="text"><![CDATA[1.列出display的值，说明他们的作用。 值 描述 none 此元素不会被显示。 block 此元素将显示为块级元素，此元素前后会带有换行符。 inline 默认。此元素会被显示为内联元素，元素前后没有换行符。 inline-block 行内块元素。 list-item 此元素会作为列表显示。 run-in 此元素会根据上下文作为块级元素或内联元素显示。 compact CSS 中有值 compact，不过由于缺乏广泛支持，已经从 CSS2.1 中删除。 marker CSS 中有值 marker，不过由于缺乏广泛支持，已经从 CSS2.1 中删除。 table 此元素会作为块级表格来显示，表格前后带有换行符。 inline-table 此元素会作为内联表格来显示，表格前后没有换行符。 table-row-group 此元素会作为一个或多个行的分组来显示 table-header-group 此元素会作为一个或多个行的分组来显示 table-footer-group 此元素会作为一个或多个行的分组来显示 table-row 此元素会作为一个表格行显示 table-column-group 此元素会作为一个或多个列的分组来显示 table-column 此元素会作为一个单元格列显示 table-cell 此元素会作为一个表格单元格显示 table-caption 此元素会作为一个表格标题显示 inherit 规定应该从父元素继承 display 属性的值。 2.position的值：relative和absolute的定位原点是？ absolute：绝对定位，定位原点是离自己这一级元素最近的一级position设置为absolute或者relative的父元素的左上角为原点。 relative：相对定位，定位原点是元素本身所在的位置。 3.CSS3有哪些新特性？ 圆角border-radius:值通常有px、rem、em、%（基于元素的width和height表示）。 1，当为一个值时：表示所有的角都为这个值 2，当为两个值时，表示左上，右下角相等、右上、左下角相等 3，当为三个值时，第一个值为左上角，第二个值为左下、右上角，第三个值为右下角 4，当为多个值时，可以为所有的角都设置值，从左上角开始 5，当用/来表示时，/前面的为水平半径，/后的为垂直半径]]></content>
