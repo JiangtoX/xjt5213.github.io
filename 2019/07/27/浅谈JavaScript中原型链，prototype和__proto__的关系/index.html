@@ -109,7 +109,7 @@
 
 
 
-  <meta name="keywords" content="教程,">
+  <meta name="keywords" content="学习笔记,">
 
 
 
@@ -122,35 +122,18 @@
 
 
 
-<meta name="description" content="之前弄了一个onedrive账号，专门用来存一些电影，容量是5T，挺大的，用oneindex来将onedrive打造成一款可以在线观看和下载视频或者文件的一个小网站最好不过了    1，注册免费空间我用的是000webhost,所以我就拿这个来做了，附上注册链接：https://www.000webhost.com/free-website-sign-up  填写邮箱和密码就可以注册了，是不是非常">
-<meta name="keywords" content="教程">
+<meta name="description" content="proto和prototype __proto__ 引用《JavaScript权威指南》的一段描述  Every JavaScript object has a second JavaScript object (or null ,but this is rare) associated with it. This second object is known as a prototype, an">
+<meta name="keywords" content="学习笔记">
 <meta property="og:type" content="article">
-<meta property="og:title" content="利用oneindex将onedrive打造成一个在线查看和下载文件的网盘">
-<meta property="og:url" content="https://www.xjt5213.club/2019/04/07/oneindex教程/index.html">
+<meta property="og:title" content="浅谈JavaScript中原型链，prototype，__proto__的关系">
+<meta property="og:url" content="https://www.xjt5213.club/2019/07/27/浅谈JavaScript中原型链，prototype和__proto__的关系/index.html">
 <meta property="og:site_name" content="Xjt5213&#39;s Blog">
-<meta property="og:description" content="之前弄了一个onedrive账号，专门用来存一些电影，容量是5T，挺大的，用oneindex来将onedrive打造成一款可以在线观看和下载视频或者文件的一个小网站最好不过了    1，注册免费空间我用的是000webhost,所以我就拿这个来做了，附上注册链接：https://www.000webhost.com/free-website-sign-up  填写邮箱和密码就可以注册了，是不是非常">
+<meta property="og:description" content="proto和prototype __proto__ 引用《JavaScript权威指南》的一段描述  Every JavaScript object has a second JavaScript object (or null ,but this is rare) associated with it. This second object is known as a prototype, an">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="https://i.loli.net/2019/04/07/5ca9f21f438f4.png">
-<meta property="og:image" content="https://i.loli.net/2019/04/07/5ca9f21fe1479.png">
-<meta property="og:image" content="https://i.loli.net/2019/04/07/5ca9f35903656.png">
-<meta property="og:image" content="https://i.loli.net/2019/04/07/5ca9f3adc47eb.png">
-<meta property="og:image" content="https://i.loli.net/2019/04/07/5ca9f3f8ecdf1.png">
-<meta property="og:image" content="https://i.loli.net/2019/04/07/5ca9f50682eb1.png">
-<meta property="og:image" content="https://i.loli.net/2019/04/07/5ca9f587a6ae3.png">
-<meta property="og:image" content="https://i.loli.net/2019/04/07/5ca9f70899168.png">
-<meta property="og:image" content="https://i.loli.net/2019/04/07/5ca9f74da64c8.png">
-<meta property="og:image" content="https://i.loli.net/2019/04/07/5ca9f8423c04d.png">
-<meta property="og:image" content="https://i.loli.net/2019/04/07/5ca9f9266e7de.png">
-<meta property="og:image" content="https://www.xzymoe.com/wp-content/uploads/2018/06/oneindex-install-envi.png">
-<meta property="og:image" content="https://www.xzymoe.com/wp-content/uploads/2018/06/oneindex-id-secret-768x420.png">
-<meta property="og:image" content="https://raw.githubusercontent.com/donwa/oneindex/files/images/install.gif">
-<meta property="og:image" content="https://raw.githubusercontent.com/donwa/oneindex/files/images/install.gif">
-<meta property="og:image" content="https://i.loli.net/2019/04/07/5ca9fbc80ab0b.png">
-<meta property="og:updated_time" content="2019-04-07T15:07:34.541Z">
+<meta property="og:updated_time" content="2019-07-27T09:10:11.765Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="利用oneindex将onedrive打造成一个在线查看和下载文件的网盘">
-<meta name="twitter:description" content="之前弄了一个onedrive账号，专门用来存一些电影，容量是5T，挺大的，用oneindex来将onedrive打造成一款可以在线观看和下载视频或者文件的一个小网站最好不过了    1，注册免费空间我用的是000webhost,所以我就拿这个来做了，附上注册链接：https://www.000webhost.com/free-website-sign-up  填写邮箱和密码就可以注册了，是不是非常">
-<meta name="twitter:image" content="https://i.loli.net/2019/04/07/5ca9f21f438f4.png">
+<meta name="twitter:title" content="浅谈JavaScript中原型链，prototype，__proto__的关系">
+<meta name="twitter:description" content="proto和prototype __proto__ 引用《JavaScript权威指南》的一段描述  Every JavaScript object has a second JavaScript object (or null ,but this is rare) associated with it. This second object is known as a prototype, an">
 
 
 
@@ -180,13 +163,13 @@
 
 
 
-  <link rel="canonical" href="https://www.xjt5213.club/2019/04/07/oneindex教程/">
+  <link rel="canonical" href="https://www.xjt5213.club/2019/07/27/浅谈JavaScript中原型链，prototype和__proto__的关系/">
 
 
 
 
 
-  <title>利用oneindex将onedrive打造成一个在线查看和下载文件的网盘 | Xjt5213's Blog</title>
+  <title>浅谈JavaScript中原型链，prototype，__proto__的关系 | Xjt5213's Blog</title>
   
 
 
@@ -365,7 +348,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://www.xjt5213.club/2019/04/07/oneindex教程/">
+    <link itemprop="mainEntityOfPage" href="https://www.xjt5213.club/2019/07/27/浅谈JavaScript中原型链，prototype和__proto__的关系/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="xjt5213">
@@ -382,7 +365,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">利用oneindex将onedrive打造成一个在线查看和下载文件的网盘</h1>
+          <h1 class="post-title" itemprop="name headline">浅谈JavaScript中原型链，prototype，__proto__的关系</h1>
         
 
         <div class="post-meta">
@@ -394,8 +377,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建时间" itemprop="dateCreated datePublished" datetime="2019-04-07T20:03:21+08:00">
-                2019-04-07
+              <time title="创建时间" itemprop="dateCreated datePublished" datetime="2019-07-27T00:00:00+08:00">
+                2019-07-27
               </time>
             
 
@@ -413,8 +396,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2019/04/07/oneindex教程/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count gitment-comments-count" data-xid="/2019/04/07/oneindex教程/" itemprop="commentsCount"></span>
+                <a href="/2019/07/27/浅谈JavaScript中原型链，prototype和__proto__的关系/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count gitment-comments-count" data-xid="/2019/07/27/浅谈JavaScript中原型链，prototype和__proto__的关系/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -422,7 +405,7 @@
 
           
           
-             <span id="/2019/04/07/oneindex教程/" class="leancloud_visitors" data-flag-title="利用oneindex将onedrive打造成一个在线查看和下载文件的网盘">
+             <span id="/2019/07/27/浅谈JavaScript中原型链，prototype和__proto__的关系/" class="leancloud_visitors" data-flag-title="浅谈JavaScript中原型链，prototype，__proto__的关系">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -459,49 +442,35 @@
       
 
       
-        <p style="text-indent:2em">之前弄了一个onedrive账号，专门用来存一些电影，容量是5T，挺大的，用oneindex来将onedrive打造成一款可以在线观看和下载视频或者文件的一个小网站最好不过了</p>  
-
-<h3 id="1，注册免费空间"><a href="#1，注册免费空间" class="headerlink" title="1，注册免费空间"></a>1，注册免费空间</h3><p>我用的是<code>000webhost</code>,所以我就拿这个来做了，附上注册链接：<a href="https://www.000webhost.com/free-website-sign-up" target="_blank" rel="noopener">https://www.000webhost.com/free-website-sign-up</a></p>
-<p><img src="https://i.loli.net/2019/04/07/5ca9f21f438f4.png" alt="1"></p>
-<p>填写邮箱和密码就可以注册了，是不是非常简单……..   </p>
-<h3 id="2，网站后台"><a href="#2，网站后台" class="headerlink" title="2，网站后台"></a>2，网站后台</h3><p>接下来登陆进入后台会看到大概如图所示的样子，点击<code>Manage Websites</code>管理网站</p>
-<p><img src="https://i.loli.net/2019/04/07/5ca9f21fe1479.png" alt="2"></p>
-<p>点进去之后就是这个样子 ,然后点击<code>File manager</code></p>
-<p><img src="https://i.loli.net/2019/04/07/5ca9f35903656.png" alt="3"></p>
-<p>出现这个 </p>
-<p><img src="https://i.loli.net/2019/04/07/5ca9f3adc47eb.png" alt="4"></p>
-<p>点击<code>Upload files now</code> 出现下图</p>
-<p><img src="https://i.loli.net/2019/04/07/5ca9f3f8ecdf1.png" alt="5"></p>
-<h3 id="3，oneindex部署"><a href="#3，oneindex部署" class="headerlink" title="3，oneindex部署"></a>3，oneindex部署</h3><p>先附上oneindex下载地址:<a href="https://github.com/donwa/oneindex" target="_blank" rel="noopener">https://github.com/donwa/oneindex</a></p>
-<p><img src="https://i.loli.net/2019/04/07/5ca9f50682eb1.png" alt="6"></p>
-<p>下载完成后,点击这个上传按钮把刚下的压缩包上传即可  注意：是上传至<code>public_html</code>文件夹下</p>
-<p><img src="https://i.loli.net/2019/04/07/5ca9f587a6ae3.png" alt="5">   </p>
-<p>上传完了之后，网站目录下就会出现这个压缩包了</p>
-<p><img src="https://i.loli.net/2019/04/07/5ca9f70899168.png" alt="7">  </p>
-<p>然后右键单击压缩包解压</p>
-<p><img src="https://i.loli.net/2019/04/07/5ca9f74da64c8.png" alt="8"></p>
-<p>注意：还是解压至<code>public_html</code>目录下，可能因为某些原因压缩包解压不了，那么只能在本地解压了，然后把文件和文件夹一个一个地上传到该目录下，注意空文件夹也要上传哦</p>
-<p>解压完或者上传完之后的文件大概是这个样子的</p>
-<p><img src="https://i.loli.net/2019/04/07/5ca9f8423c04d.png" alt="10"></p>
-<p>这个时候oneindex就部署完了</p>
-<h3 id="4，oneindex设置"><a href="#4，oneindex设置" class="headerlink" title="4，oneindex设置"></a>4，oneindex设置</h3><p>点击你的网址就会看到oneindex的设置界面了</p>
-<p><img src="https://i.loli.net/2019/04/07/5ca9f9266e7de.png" alt="11"></p>
-<p><img src="https://www.xzymoe.com/wp-content/uploads/2018/06/oneindex-install-envi.png" alt="12"></p>
-<p>下一步即可</p>
-<p><img src="https://www.xzymoe.com/wp-content/uploads/2018/06/oneindex-id-secret-768x420.png" alt="13"></p>
-<p><img src="https://raw.githubusercontent.com/donwa/oneindex/files/images/install.gif" alt="14"></p>
-<p>然后获取应用id和机密分别填入第一栏和第二栏，第三栏不动   下一步。</p>
-<p><img src="https://raw.githubusercontent.com/donwa/oneindex/files/images/install.gif" alt="15"></p>
-<p>绑定账号之后刷新你的网址就可以了</p>
-<p>安装完成后可以通过后台登录对OneIndex进行管理</p>
-<p>后台网址：你的原有网址上+<code>/?/admin</code>即可，初次登陆需要密码，默认密码是<code>oneindex</code></p>
-<p><img src="https://i.loli.net/2019/04/07/5ca9fbc80ab0b.png" alt="15"></p>
-<p>上传文件到你的onedrive就可以在这个网站上同步显示了，如果是视频可以在线观看</p>
-<h3 id="5，指定文件夹加密"><a href="#5，指定文件夹加密" class="headerlink" title="5，指定文件夹加密"></a>5，指定文件夹加密</h3><p>如果你要给你的网站加密码，只有输入密码才能访问的话，<code>win+R</code>输入<code>cmd</code></p>
-<p>进入到你的桌面路径</p>
-<p>在弹出的命令行输入<code>echo 你设置的密码-&gt;password</code>回车</p>
-<p>在你的桌面会出现一个后缀为<code>.password</code>的文件，把这个文件放入你想加密的文件夹里面，到oneindex后台<code>刷新缓存</code>之后重新进入你的网站就会要求输入密码访问了。</p>
-<h3 id="6，文件上传"><a href="#6，文件上传" class="headerlink" title="6，文件上传"></a>6，文件上传</h3><p>上传文件的话直接用onedrive上传即可，刷新你的网站即可看到上传的文件。</p>
+        <p><strong><strong>proto</strong>和prototype</strong></p>
+<p><code>__proto__</code></p>
+<p>引用《JavaScript权威指南》的一段描述</p>
+<blockquote>
+<p>Every JavaScript object has a second JavaScript object (or null ,<br>but this is rare) associated with it. This second object is known as a prototype, and the first object inherits properties from the prototype.</p>
+</blockquote>
+<p>翻译出来就是每个JS对象一定对应一个原型对象，并从原型对象继承属性和方法。好啦，既然有这么一个原型对象，那么对象怎么和它对应的？</p>
+<p><strong>对象<strong>proto</strong>属性的值就是它所对应的的原型对象</strong></p>
+<p>看一段代码</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> one = &#123;<span class="attr">x</span>: <span class="number">1</span>&#125;;</span><br><span class="line"><span class="keyword">var</span> two = <span class="keyword">new</span> <span class="built_in">Object</span>();</span><br><span class="line">one.__proto__ === <span class="built_in">Object</span>.prototype <span class="comment">// true</span></span><br><span class="line">two.__proto__ === <span class="built_in">Object</span>.prototype <span class="comment">// true</span></span><br><span class="line">one.toString === one.__proto__.toString <span class="comment">// true</span></span><br></pre></td></tr></table></figure>
+<p>上边代码应该已经足够清除地解释了什么是<code>__proto__</code>,好吧，显然还不够，或者说带来了新的问题？<code>Object.prototype</code>是什么？凭什么说<code>one</code>和<code>two</code>的原型就是<code>Object.prototype</code></p>
+<p><code>prototype</code></p>
+<p>首先来说说<code>prototype</code>属性，不想每个对象都有<code>__proto__</code>属性来标志自己所继承的原型，只有函数才有<code>prototype</code>属性,为什么只有函数才具有<code>prototype</code>属性呢？ES规范就是这么定的。</p>
+<p>开玩笑了，其实函数在JS中真的很特殊，是所谓的<em>一等公民</em>。JS不像其它面向对象的语言，它没有类（<code>class</code>，ES6引进了这个关键字，但更多是语法糖）的概念。JS通过函数来模拟类。</p>
+<p>当你创建一个函数时，js会为这个函数自动添加<code>prototype</code>属性，值是一个有constructor属性的对象，不是空对象，而一旦你把这个函数当做构造函数（constructor）来调用(即通过<code>new</code>关键字调用)，那么js就会帮你创建该构造函数的实例，实例继承构造函数<code>prototype</code>的所有属性和方法（实例通过设置自己的<code>__proto__</code>指向构造函数的<code>prototype</code>来实现这种继承）。</p>
+<p><strong>小结</strong></p>
+<p>虽然对不熟悉的人来说还有点绕，但JS正是通过<code>__proto__</code>和<code>prototype</code>的合作实现了原型链，以及对象的继承。</p>
+<p>构造函数，通过<code>prototype</code>来存储要共享的属性和方法，也可以设置<code>prototype</code>指向现存的对象来继承该对象。</p>
+<p>对象的<code>__proto__</code>指向自己构造函数的<code>prototype</code>。<code>obj.__proto__.__proto__...</code>的原型链由此产生，包括我们的操作符<code>instanceof</code>正是通过探测<code>obj.__proto__.__proto__... === Constructor.prototype</code>来验证<code>obj</code>是否是<code>Constructor</code>的实例。</p>
+<p>回到开头的代码，<code>two = new Object()</code>中<code>Object</code>是构造函数，所以<code>two.__proto__</code>就是<code>Object.prototype</code>。至于<code>one</code>，ES规范定义对象字面量的原型就是<code>Object.prototype</code>。</p>
+<h3 id="更深一步的探讨"><a href="#更深一步的探讨" class="headerlink" title="更深一步的探讨"></a>更深一步的探讨</h3><p>我们知道JS是单继承的，<code>Object.prototype</code>是原型链的顶端，所有对象从它继承了包括<code>toString</code>等等方法和属性。</p>
+<p><code>Object</code>本身是构造函数，继承了<code>Function.prototype</code>;<code>Function</code>也是对象，继承了<code>Object.prototype</code>。这里就有一个<em>鸡和蛋</em>的问题：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">Object</span> <span class="keyword">instanceof</span> <span class="built_in">Function</span> <span class="comment">// true</span></span><br><span class="line"><span class="built_in">Function</span> <span class="keyword">instanceof</span> <span class="built_in">Object</span> <span class="comment">// true</span></span><br></pre></td></tr></table></figure>
+<p>具体到JS，ES规范是怎么说的？</p>
+<blockquote>
+<p>Function<strong>本身就是函数</strong>，<code>Function.__proto__</code>是标准的内置对象<code>Function.prototype</code>。</p>
+<p><code>Function.prototype.__proto__</code>是标准的内置对象<code>Object.prototype</code>。</p>
+</blockquote>
+<p>今天就先写到这儿，改天接写。。。</p>
 
       
     </div>
@@ -570,7 +539,7 @@
   <!-- 本文标题 -->
   <li>
     <strong>本文标题： </strong>
-    利用oneindex将onedrive打造成一个在线查看和下载文件的网盘
+    浅谈JavaScript中原型链，prototype，__proto__的关系
   </li>
 
   <!-- 本文作者 -->
@@ -582,20 +551,20 @@
   <!-- 创建时间 -->
   <li>
     <strong>创建时间： </strong>
-    2019年04月07日 - 20时04分
+    2019年07月27日 - 00时07分
   </li>
 
   <!-- 修改时间 -->
   <li>
     <strong>修改时间： </strong>
-    2019年04月07日 - 23时04分
+    2019年07月27日 - 17时07分
   </li>
 
   <!-- 引用链接 -->
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
-    <a href="https://www.xjt5213.club/2019/04/07/oneindex教程/" title="利用oneindex将onedrive打造成一个在线查看和下载文件的网盘">https://www.xjt5213.club/2019/04/07/oneindex教程/</a>
-    <span class="copy-path" title="点击复制引用链接"><i style="cursor: pointer" class="fa fa-clipboard" data-clipboard-text="['s Blog | 利用oneindex将onedrive打造成一个在线查看和下载文件的网盘](https://www.xjt5213.club/2019/04/07/oneindex教程/)" aria-label="复制成功"></i></span>
+    <a href="https://www.xjt5213.club/2019/07/27/浅谈JavaScript中原型链，prototype和__proto__的关系/" title="浅谈JavaScript中原型链，prototype，__proto__的关系">https://www.xjt5213.club/2019/07/27/浅谈JavaScript中原型链，prototype和__proto__的关系/</a>
+    <span class="copy-path" title="点击复制引用链接"><i style="cursor: pointer" class="fa fa-clipboard" data-clipboard-text="['s Blog | 浅谈JavaScript中原型链，prototype，__proto__的关系](https://www.xjt5213.club/2019/07/27/浅谈JavaScript中原型链，prototype和__proto__的关系/)" aria-label="复制成功"></i></span>
   </li>
 
   <!-- 版权声明 -->
@@ -625,7 +594,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/教程/" rel="tag"><i class="fa fa-tag"></i> 教程</a>
+            <a href="/tags/学习笔记/" rel="tag"><i class="fa fa-tag"></i> 学习笔记</a>
           
         </div>
       
@@ -653,8 +622,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/04/06/爬梯教程/" rel="next" title="自建爬梯教程">
-                <i class="fa fa-chevron-left"></i> 自建爬梯教程
+              <a href="/2019/07/26/js事件冒泡及捕获/" rel="next" title="js事件冒泡及事件捕获">
+                <i class="fa fa-chevron-left"></i> js事件冒泡及事件捕获
               </a>
             
           </div>
@@ -663,8 +632,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2019/04/08/学习笔记一--Http请求/" rel="prev" title="http深入浅出--http请求">
-                http深入浅出--http请求 <i class="fa fa-chevron-right"></i>
+              <a href="/2019/07/27/vue实现组件间传值/" rel="prev" title="vue组件间传值">
+                vue组件间传值 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -850,7 +819,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#1，注册免费空间"><span class="nav-text">1，注册免费空间</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2，网站后台"><span class="nav-text">2，网站后台</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3，oneindex部署"><span class="nav-text">3，oneindex部署</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4，oneindex设置"><span class="nav-text">4，oneindex设置</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5，指定文件夹加密"><span class="nav-text">5，指定文件夹加密</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#6，文件上传"><span class="nav-text">6，文件上传</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#更深一步的探讨"><span class="nav-text">更深一步的探讨</span></a></li></ol></div>
             
 
           </div>
