@@ -499,7 +499,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://www.xjt5213.club/2019/07/27/vue实现组件间传值/">
+    <link itemprop="mainEntityOfPage" href="https://www.xjt5213.club/2019/07/27/浅谈JavaScript中原型链，prototype和__proto__的关系/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="xjt5213">
@@ -518,7 +518,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2019/07/27/vue实现组件间传值/" itemprop="url">vue组件间传值</a></h1>
+                <a class="post-title-link" href="/2019/07/27/浅谈JavaScript中原型链，prototype和__proto__的关系/" itemprop="url">浅谈JavaScript中原型链，prototype，__proto__的关系</a></h1>
         
 
         <div class="post-meta">
@@ -549,8 +549,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2019/07/27/vue实现组件间传值/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2019/07/27/vue实现组件间传值/" itemprop="commentCount"></span>
+                <a href="/2019/07/27/浅谈JavaScript中原型链，prototype和__proto__的关系/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2019/07/27/浅谈JavaScript中原型链，prototype和__proto__的关系/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -558,7 +558,7 @@
 
           
           
-             <span id="/2019/07/27/vue实现组件间传值/" class="leancloud_visitors" data-flag-title="vue组件间传值">
+             <span id="/2019/07/27/浅谈JavaScript中原型链，prototype和__proto__的关系/" class="leancloud_visitors" data-flag-title="浅谈JavaScript中原型链，prototype，__proto__的关系">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -592,169 +592,15 @@
       
         
           
-          说到组件吗传值，无非就是父组件传子组件，子组件传父组件，兄弟组件之间传值，先来讲讲父组件传子组件的情况。先看看下面的使用场景:父组件点击传值给子组件
+          proto和prototype
+__proto__
+引用《JavaScript权威指南》的一段描述
 
-在这里触发handleClick点击事件，额外声
+Every JavaScript object has a second JavaScript o
           ...
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/2019/07/27/vue实现组件间传值/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://www.xjt5213.club/2019/07/27/浅谈圣杯布局和双飞翼布局/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="xjt5213">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/xjt5213.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Xjt5213's Blog">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/07/27/浅谈圣杯布局和双飞翼布局/" itemprop="url">浅谈圣杯布局和双飞翼布局</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建时间" itemprop="dateCreated datePublished" datetime="2019-07-27T00:00:00+08:00">
-                2019-07-27
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2019/07/27/浅谈圣杯布局和双飞翼布局/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2019/07/27/浅谈圣杯布局和双飞翼布局/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-             <span id="/2019/07/27/浅谈圣杯布局和双飞翼布局/" class="leancloud_visitors" data-flag-title="浅谈圣杯布局和双飞翼布局">
-               <span class="post-meta-divider">|</span>
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               
-                 <span class="post-meta-item-text">热度 </span>
-               
-                 <span class="leancloud-visitors-count"></span>
-                 <span>℃</span>
-             </span>
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-          最近面试碰到一个问题—圣杯布局和双飞翼布局，其实自己也不太明白，今天就来记录一下学习过程
-
-首先圣杯布局和双飞翼布局，都属于三列布局的经典布局
-圣杯布局是外国人发明的
-双飞翼布局是圣杯布局的优化版，由
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2019/07/27/浅谈圣杯布局和双飞翼布局/#more" rel="contents">
+            <a class="btn" href="/2019/07/27/浅谈JavaScript中原型链，prototype和__proto__的关系/#more" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
@@ -966,7 +812,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://www.xjt5213.club/2019/07/27/浅谈JavaScript中原型链，prototype和__proto__的关系/">
+    <link itemprop="mainEntityOfPage" href="https://www.xjt5213.club/2019/07/27/浅谈圣杯布局和双飞翼布局/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="xjt5213">
@@ -985,7 +831,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2019/07/27/浅谈JavaScript中原型链，prototype和__proto__的关系/" itemprop="url">浅谈JavaScript中原型链，prototype，__proto__的关系</a></h1>
+                <a class="post-title-link" href="/2019/07/27/浅谈圣杯布局和双飞翼布局/" itemprop="url">浅谈圣杯布局和双飞翼布局</a></h1>
         
 
         <div class="post-meta">
@@ -1016,8 +862,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2019/07/27/浅谈JavaScript中原型链，prototype和__proto__的关系/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2019/07/27/浅谈JavaScript中原型链，prototype和__proto__的关系/" itemprop="commentCount"></span>
+                <a href="/2019/07/27/浅谈圣杯布局和双飞翼布局/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2019/07/27/浅谈圣杯布局和双飞翼布局/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -1025,7 +871,7 @@
 
           
           
-             <span id="/2019/07/27/浅谈JavaScript中原型链，prototype和__proto__的关系/" class="leancloud_visitors" data-flag-title="浅谈JavaScript中原型链，prototype，__proto__的关系">
+             <span id="/2019/07/27/浅谈圣杯布局和双飞翼布局/" class="leancloud_visitors" data-flag-title="浅谈圣杯布局和双飞翼布局">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -1059,15 +905,15 @@
       
         
           
-          proto和prototype
-__proto__
-引用《JavaScript权威指南》的一段描述
+          最近面试碰到一个问题—圣杯布局和双飞翼布局，其实自己也不太明白，今天就来记录一下学习过程
 
-Every JavaScript object has a second JavaScript o
+首先圣杯布局和双飞翼布局，都属于三列布局的经典布局
+圣杯布局是外国人发明的
+双飞翼布局是圣杯布局的优化版，由
           ...
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/2019/07/27/浅谈JavaScript中原型链，prototype和__proto__的关系/#more" rel="contents">
+            <a class="btn" href="/2019/07/27/浅谈圣杯布局和双飞翼布局/#more" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
@@ -1122,7 +968,7 @@ Every JavaScript object has a second JavaScript o
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://www.xjt5213.club/2019/07/26/v-model使用及标签绑定事件/">
+    <link itemprop="mainEntityOfPage" href="https://www.xjt5213.club/2019/07/27/vue实现组件间传值/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="xjt5213">
@@ -1141,7 +987,7 @@ Every JavaScript object has a second JavaScript o
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2019/07/26/v-model使用及标签绑定事件/" itemprop="url">v-model是什么?怎么使用？vue中标签如何绑定事件</a></h1>
+                <a class="post-title-link" href="/2019/07/27/vue实现组件间传值/" itemprop="url">vue组件间传值</a></h1>
         
 
         <div class="post-meta">
@@ -1153,8 +999,8 @@ Every JavaScript object has a second JavaScript o
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建时间" itemprop="dateCreated datePublished" datetime="2019-07-26T00:00:00+08:00">
-                2019-07-26
+              <time title="创建时间" itemprop="dateCreated datePublished" datetime="2019-07-27T00:00:00+08:00">
+                2019-07-27
               </time>
             
 
@@ -1172,8 +1018,8 @@ Every JavaScript object has a second JavaScript o
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2019/07/26/v-model使用及标签绑定事件/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2019/07/26/v-model使用及标签绑定事件/" itemprop="commentCount"></span>
+                <a href="/2019/07/27/vue实现组件间传值/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2019/07/27/vue实现组件间传值/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -1181,7 +1027,7 @@ Every JavaScript object has a second JavaScript o
 
           
           
-             <span id="/2019/07/26/v-model使用及标签绑定事件/" class="leancloud_visitors" data-flag-title="v-model是什么?怎么使用？vue中标签如何绑定事件">
+             <span id="/2019/07/27/vue实现组件间传值/" class="leancloud_visitors" data-flag-title="vue组件间传值">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -1215,12 +1061,13 @@ Every JavaScript object has a second JavaScript o
       
         
           
-          引用官方文档的一段话
-你可以用 v-model 指令在表单 &lt;input&gt;、&lt;textarea&gt; 及 &lt;select&gt; 元素上创建双向数据绑定。它会根据控件类型自动
+          说到组件吗传值，无非就是父组件传子组件，子组件传父组件，兄弟组件之间传值，先来讲讲父组件传子组件的情况。先看看下面的使用场景:父组件点击传值给子组件
+
+在这里触发handleClick点击事件，额外声
           ...
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/2019/07/26/v-model使用及标签绑定事件/#more" rel="contents">
+            <a class="btn" href="/2019/07/27/vue实现组件间传值/#more" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
@@ -1375,6 +1222,159 @@ Every JavaScript object has a second JavaScript o
           <!--noindex-->
           <div class="post-button text-center">
             <a class="btn" href="/2019/07/26/vuex使用方式/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://www.xjt5213.club/2019/07/26/v-model使用及标签绑定事件/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="xjt5213">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/xjt5213.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Xjt5213's Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/07/26/v-model使用及标签绑定事件/" itemprop="url">v-model是什么?怎么使用？vue中标签如何绑定事件</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建时间" itemprop="dateCreated datePublished" datetime="2019-07-26T00:00:00+08:00">
+                2019-07-26
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2019/07/26/v-model使用及标签绑定事件/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2019/07/26/v-model使用及标签绑定事件/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+             <span id="/2019/07/26/v-model使用及标签绑定事件/" class="leancloud_visitors" data-flag-title="v-model是什么?怎么使用？vue中标签如何绑定事件">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">热度 </span>
+               
+                 <span class="leancloud-visitors-count"></span>
+                 <span>℃</span>
+             </span>
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+          引用官方文档的一段话
+你可以用 v-model 指令在表单 &lt;input&gt;、&lt;textarea&gt; 及 &lt;select&gt; 元素上创建双向数据绑定。它会根据控件类型自动
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2019/07/26/v-model使用及标签绑定事件/#more" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
