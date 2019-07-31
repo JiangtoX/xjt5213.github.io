@@ -109,7 +109,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT">
+  <meta name="keywords" content="学习笔记,">
 
 
 
@@ -122,16 +122,18 @@
 
 
 
-<meta name="description" content="不将就">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Xjt5213&#39;s Blog">
-<meta property="og:url" content="https://www.xjt5213.club/archives/2019/07/index.html">
+<meta name="description" content="最近在面试的过程中面试官频繁地问道一个问题—深拷贝与浅拷贝的区别？之前一直不懂，今天有必要来研究一下，以防下次面试遇到。 JavaScript基本数据类型先来说一说JavaScript基本数据类型：  基本类型：Undefined,Null,Boolean,Number,String,变量是之间按值存放的，存放在栈内存中的简单数据段，可以直接访问。 引用类型：存放在堆内存中的对象，变量保存的是一个">
+<meta name="keywords" content="学习笔记">
+<meta property="og:type" content="article">
+<meta property="og:title" content="谈一谈深拷贝与浅拷贝">
+<meta property="og:url" content="https://www.xjt5213.club/2019/07/31/谈一谈深拷贝与浅拷贝/index.html">
 <meta property="og:site_name" content="Xjt5213&#39;s Blog">
-<meta property="og:description" content="不将就">
+<meta property="og:description" content="最近在面试的过程中面试官频繁地问道一个问题—深拷贝与浅拷贝的区别？之前一直不懂，今天有必要来研究一下，以防下次面试遇到。 JavaScript基本数据类型先来说一说JavaScript基本数据类型：  基本类型：Undefined,Null,Boolean,Number,String,变量是之间按值存放的，存放在栈内存中的简单数据段，可以直接访问。 引用类型：存放在堆内存中的对象，变量保存的是一个">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2019-07-31T08:11:36.592Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Xjt5213&#39;s Blog">
-<meta name="twitter:description" content="不将就">
+<meta name="twitter:title" content="谈一谈深拷贝与浅拷贝">
+<meta name="twitter:description" content="最近在面试的过程中面试官频繁地问道一个问题—深拷贝与浅拷贝的区别？之前一直不懂，今天有必要来研究一下，以防下次面试遇到。 JavaScript基本数据类型先来说一说JavaScript基本数据类型：  基本类型：Undefined,Null,Boolean,Number,String,变量是之间按值存放的，存放在栈内存中的简单数据段，可以直接访问。 引用类型：存放在堆内存中的对象，变量保存的是一个">
 
 
 
@@ -161,13 +163,13 @@
 
 
 
-  <link rel="canonical" href="https://www.xjt5213.club/archives/2019/07/">
+  <link rel="canonical" href="https://www.xjt5213.club/2019/07/31/谈一谈深拷贝与浅拷贝/">
 
 
 
 
 
-  <title>归档 | Xjt5213's Blog</title>
+  <title>谈一谈深拷贝与浅拷贝 | Xjt5213's Blog</title>
   
 
 
@@ -186,7 +188,7 @@
     
   
 
-  <div class="container sidebar-position-left page-archive">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -332,352 +334,324 @@
           <div id="content" class="content">
             
 
-  
-  
-  
-  <div class="post-block archive">
-    <div id="posts" class="posts-collapse">
-      <span class="archive-move-on"></span>
+  <div id="posts" class="posts-expand">
+    
 
-      <span class="archive-page-counter">
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://www.xjt5213.club/2019/07/31/谈一谈深拷贝与浅拷贝/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="xjt5213">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/xjt5213.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Xjt5213's Blog">
+    </span>
+
+    
+      <header class="post-header">
+
         
         
+          <h1 class="post-title" itemprop="name headline">谈一谈深拷贝与浅拷贝</h1>
         
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建时间" itemprop="dateCreated datePublished" datetime="2019-07-31T00:00:00+08:00">
+                2019-07-31
+              </time>
+            
+
+            
+
+            
+          </span>
+
           
-        
-        嗯..! 目前共计 18 篇日志。 继续努力。
-      </span>
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2019/07/31/谈一谈深拷贝与浅拷贝/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count gitment-comments-count" data-xid="/2019/07/31/谈一谈深拷贝与浅拷贝/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+             <span id="/2019/07/31/谈一谈深拷贝与浅拷贝/" class="leancloud_visitors" data-flag-title="谈一谈深拷贝与浅拷贝">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">热度 </span>
+               
+                 <span class="leancloud-visitors-count"></span>
+                 <span>℃</span>
+             </span>
+          
+
+          
+            <span class="post-meta-divider">|</span>
+            <span class="page-pv"><i class="fa fa-file-o"></i>
+            <span class="busuanzi-value" id="busuanzi_value_page_pv"></span>
+            </span>
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
+      
 
+      
+        <p>最近在面试的过程中面试官频繁地问道一个问题—深拷贝与浅拷贝的区别？之前一直不懂，今天有必要来研究一下，以防下次面试遇到。</p>
+<h3 id="JavaScript基本数据类型"><a href="#JavaScript基本数据类型" class="headerlink" title="JavaScript基本数据类型"></a>JavaScript基本数据类型</h3><p>先来说一说JavaScript基本数据类型：</p>
+<ul>
+<li>基本类型：Undefined,Null,Boolean,Number,String,变量是之间按值存放的，存放在栈内存中的简单数据段，可以直接访问。</li>
+<li>引用类型：存放在堆内存中的对象，变量保存的是一个指针，这个指针指向另一个位置。当需要访问引用类型（如对象，数组等）的值时，首先从栈中获得该对象的地址指针，然后再从堆内存中取得所需的数据。</li>
+</ul>
+<blockquote>
+<p>JavaScript存储对象都是存地址的，所以浅拷贝会导致 obj1 和obj2 指向同一块内存地址。改变了其中一方的内容，都是在原来的内存上做修改会导致拷贝对象和源对象都发生改变，而深拷贝是开辟一块新的内存地址，将原对象的各个属性逐个复制进去。对拷贝对象和源对象各自的操作互不影响。</p>
+</blockquote>
+<p>例如：数组拷贝</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//浅拷贝，双向改变,指向同一片内存空间</span></span><br><span class="line"><span class="keyword">var</span> arr1 = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>];</span><br><span class="line"><span class="keyword">var</span> arr2 = arr1;</span><br><span class="line">arr1[<span class="number">0</span>] = <span class="string">'change'</span>;</span><br><span class="line"><span class="built_in">console</span>.log(<span class="string">'shallow copy: '</span> + arr1 + <span class="string">" );   //shallow copy: change,2,3</span></span><br><span class="line"><span class="string">console.log('shallow copy: ' + arr2 + "</span> );   <span class="comment">//shallow copy: change,2,3</span></span><br></pre></td></tr></table></figure>
+<h2 id="1-浅拷贝的实现"><a href="#1-浅拷贝的实现" class="headerlink" title="1. 浅拷贝的实现"></a>1. 浅拷贝的实现</h2><h3 id="1-1-简单的引用复制"><a href="#1-1-简单的引用复制" class="headerlink" title="1.1 简单的引用复制"></a>1.1 简单的引用复制</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">shallowClone</span>(<span class="params">copyObj</span>) </span>&#123;</span><br><span class="line">       <span class="keyword">var</span> obj = &#123;&#125;;</span><br><span class="line">       <span class="keyword">for</span> ( <span class="keyword">var</span> i <span class="keyword">in</span> copyObj) &#123;</span><br><span class="line">           obj[i] = copyObj[i];</span><br><span class="line">       &#125;</span><br><span class="line">       <span class="keyword">return</span> obj;</span><br><span class="line">   &#125;</span><br><span class="line">   <span class="keyword">var</span> x = &#123;</span><br><span class="line">       a: <span class="number">1</span>,</span><br><span class="line">       b: &#123; <span class="attr">f</span>: &#123; <span class="attr">g</span>: <span class="number">1</span> &#125; &#125;,</span><br><span class="line">       c: [ <span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span> ]</span><br><span class="line">   &#125;;</span><br><span class="line">   <span class="keyword">var</span> y = shallowClone(x);</span><br><span class="line">   <span class="built_in">console</span>.log(y.b.f === x.b.f);     <span class="comment">// true</span></span><br></pre></td></tr></table></figure>
+<h3 id="1-2-Object-assign"><a href="#1-2-Object-assign" class="headerlink" title="1.2 Object.assign()"></a>1.2 Object.assign()</h3><p>Object.assign() 方法可以把任意多个的源对象自身的可枚举属性拷贝给目标对象，然后返回目标对象。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> x = &#123;</span><br><span class="line">  a: <span class="number">1</span>,</span><br><span class="line">  b: &#123; <span class="attr">f</span>: &#123; <span class="attr">g</span>: <span class="number">1</span> &#125; &#125;,</span><br><span class="line">  c: [ <span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span> ]</span><br><span class="line">&#125;;</span><br><span class="line"><span class="keyword">var</span> y = <span class="built_in">Object</span>.assign(&#123;&#125;, x);</span><br><span class="line"><span class="built_in">console</span>.log(y.b.f === x.b.f);     <span class="comment">// true</span></span><br></pre></td></tr></table></figure>
+<h2 id="2-深拷贝的实现"><a href="#2-深拷贝的实现" class="headerlink" title="2. 深拷贝的实现"></a>2. 深拷贝的实现</h2><h3 id="2-1-Array的slice和concat方法"><a href="#2-1-Array的slice和concat方法" class="headerlink" title="2.1 Array的slice和concat方法"></a>2.1 Array的slice和concat方法</h3><p>Array的slice和concat方法不修改原数组，只会返回一个浅复制了原数组中的元素的一个新数组。<strong>之所以把它放在深拷贝里，是因为它看起来像是深拷贝。而实际上它是浅拷贝</strong>。原数组的元素会按照下述规则拷贝：</p>
+<ul>
+<li>如果该元素是个对象引用 （不是实际的对象），slice 会拷贝这个对象引用到新的数组里。两个对象引用都引用了同一个对象。如果被引用的对象发生改变，则新的和原来的数组中的这个元素也会发生改变。</li>
+<li>对于字符串、数字及布尔值来说（不是 String、Number 或者 Boolean 对象），slice 会拷贝这些值到新的数组里。在别的数组里修改这些字符串或数字或是布尔值，将不会影响另一个数组。、</li>
+</ul>
+<p>如果向两个数组任一中添加了新元素，则另一个不会受到影响。例子如下：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> array = [<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>];</span><br><span class="line"><span class="keyword">var</span> array_shallow = array;</span><br><span class="line"><span class="keyword">var</span> array_concat = array.concat();</span><br><span class="line"><span class="keyword">var</span> array_slice = array.slice(<span class="number">0</span>);</span><br><span class="line"><span class="built_in">console</span>.log(array === array_shallow); <span class="comment">//true</span></span><br><span class="line"><span class="built_in">console</span>.log(array === array_slice); <span class="comment">//false，“看起来”像深拷贝</span></span><br><span class="line"><span class="built_in">console</span>.log(array === array_concat); <span class="comment">//false，“看起来”像深拷贝</span></span><br></pre></td></tr></table></figure>
+<p>可以看出，concat和slice返回的不同的数组实例，这与直接的引用复制是不同的。而从另一个例子可以看出Array的concat和slice并不是真正的深复制，数组中的对象元素(Object,Array等)只是复制了引用。如下：</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">var <span class="built_in">array</span> = [<span class="number">1</span>, [<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>], &#123;name:<span class="string">"array"</span>&#125;]; </span><br><span class="line">var array_concat = <span class="built_in">array</span>.concat();</span><br><span class="line">var array_slice = <span class="built_in">array</span>.slice(<span class="number">0</span>);</span><br><span class="line">array_concat[<span class="number">1</span>][<span class="number">0</span>] = <span class="number">5</span>;  <span class="comment">//改变array_concat中数组元素的值 </span></span><br><span class="line">console.<span class="built_in">log</span>(<span class="built_in">array</span>[<span class="number">1</span>]); <span class="comment">//[5,2,3] </span></span><br><span class="line">console.<span class="built_in">log</span>(array_slice[<span class="number">1</span>]); <span class="comment">//[5,2,3] </span></span><br><span class="line">array_slice[<span class="number">2</span>].name = <span class="string">"array_slice"</span>; <span class="comment">//改变array_slice中对象元素的值 </span></span><br><span class="line">console.<span class="built_in">log</span>(<span class="built_in">array</span>[<span class="number">2</span>].name); <span class="comment">//array_slice</span></span><br><span class="line">console.<span class="built_in">log</span>(array_concat[<span class="number">2</span>].name); <span class="comment">//array_slice</span></span><br></pre></td></tr></table></figure>
+<h3 id="2-2-JSON对象的parse和stringify"><a href="#2-2-JSON对象的parse和stringify" class="headerlink" title="2.2 JSON对象的parse和stringify"></a>2.2 JSON对象的parse和stringify</h3><p>JSON对象是ES5中引入的新的类型（支持的浏览器为IE8+），JSON对象parse方法可以将JSON字符串反序列化成JS对象，stringify方法可以将JS对象序列化成JSON字符串，借助这两个方法，也可以实现对象的深拷贝。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//例1</span></span><br><span class="line"><span class="keyword">var</span> source = &#123; <span class="attr">name</span>:<span class="string">"source"</span>, <span class="attr">child</span>:&#123; <span class="attr">name</span>:<span class="string">"child"</span> &#125; &#125; </span><br><span class="line"><span class="keyword">var</span> target = <span class="built_in">JSON</span>.parse(<span class="built_in">JSON</span>.stringify(source));</span><br><span class="line">target.name = <span class="string">"target"</span>;  <span class="comment">//改变target的name属性</span></span><br><span class="line"><span class="built_in">console</span>.log(source.name); <span class="comment">//source </span></span><br><span class="line"><span class="built_in">console</span>.log(target.name); <span class="comment">//target</span></span><br><span class="line">target.child.name = <span class="string">"target child"</span>; <span class="comment">//改变target的child </span></span><br><span class="line"><span class="built_in">console</span>.log(source.child.name); <span class="comment">//child </span></span><br><span class="line"><span class="built_in">console</span>.log(target.child.name); <span class="comment">//target child</span></span><br><span class="line"><span class="comment">//例2</span></span><br><span class="line"><span class="keyword">var</span> source = &#123; <span class="attr">name</span>:<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;<span class="built_in">console</span>.log(<span class="number">1</span>);&#125;, <span class="attr">child</span>:&#123; <span class="attr">name</span>:<span class="string">"child"</span> &#125; &#125; </span><br><span class="line"><span class="keyword">var</span> target = <span class="built_in">JSON</span>.parse(<span class="built_in">JSON</span>.stringify(source));</span><br><span class="line"><span class="built_in">console</span>.log(target.name); <span class="comment">//undefined</span></span><br><span class="line"><span class="comment">//例3</span></span><br><span class="line"><span class="keyword">var</span> source = &#123; <span class="attr">name</span>:<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;<span class="built_in">console</span>.log(<span class="number">1</span>);&#125;, <span class="attr">child</span>:<span class="keyword">new</span> <span class="built_in">RegExp</span>(<span class="string">"e"</span>) &#125;</span><br><span class="line"><span class="keyword">var</span> target = <span class="built_in">JSON</span>.parse(<span class="built_in">JSON</span>.stringify(source));</span><br><span class="line"><span class="built_in">console</span>.log(target.name); <span class="comment">//undefined</span></span><br><span class="line"><span class="built_in">console</span>.log(target.child); <span class="comment">//Object &#123;&#125;</span></span><br></pre></td></tr></table></figure>
+<p>这种方法使用较为简单，可以满足基本的深拷贝需求，而且能够处理JSON格式能表示的所有数据类型，但是对于正则表达式类型、函数类型等无法进行深拷贝(而且会直接丢失相应的值)。还有一点不好的地方是它会抛弃对象的constructor。也就是深拷贝之后，不管这个对象原来的构造函数是什么，在深拷贝之后都会变成Object。同时如果对象中存在循环引用的情况也无法正确处理。</p>
+<h2 id="区别："><a href="#区别：" class="headerlink" title="区别："></a>区别：</h2><ul>
+<li>浅拷贝：将原对象或者原数组的引用直接复制给新对象，新数组，新对象/新数组只是原对象的一个引用</li>
+<li>深拷贝：创建一个新的对象和数组，将原对象各项属性的值拷贝过来，是值而不是引用。</li>
+</ul>
+
+      
+    </div>
+    
+    
+    
+
+    
+    <div>
+      <div>
+  
+    <div style="text-align:center;color:#bfbfbf;font-size:16px;">
+      <span>-------- 本文结束 </span>
+      <i class="fa fa-paw"></i>
+      <span> 感谢阅读 --------</span>
+    </div>
+  
+</div>
+    </div>
+    
+
+    
+
+    
+
+    
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div></div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>打赏</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="/images/wechatpay.png" alt="xjt5213 微信支付">
+        <p>微信支付</p>
+      </div>
+    
+
+    
+      <div id="alipay" style="display: inline-block">
+        <img id="alipay_qr" src="/images/alipay.jpg" alt="xjt5213 支付宝">
+        <p>支付宝</p>
+      </div>
+    
+
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+      <div>
+        <script src="https://cdn.bootcss.com/clipboard.js/2.0.1/clipboard.min.js"></script>
+
+<!-- JS库 sweetalert 显示提示信息-->
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+<ul class="post-copyright">
+
+  <!-- 本文标题 -->
+  <li>
+    <strong>本文标题： </strong>
+    谈一谈深拷贝与浅拷贝
+  </li>
+
+  <!-- 本文作者 -->
+  <li class="post-copyright-author">
+    <strong>本文作者： </strong>
+    xjt5213
+  </li>
+
+  <!-- 创建时间 -->
+  <li>
+    <strong>创建时间： </strong>
+    2019年07月31日 - 00时07分
+  </li>
+
+  <!-- 修改时间 -->
+  <li>
+    <strong>修改时间： </strong>
+    2019年07月31日 - 16时07分
+  </li>
+
+  <!-- 引用链接 -->
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    <a href="https://www.xjt5213.club/2019/07/31/谈一谈深拷贝与浅拷贝/" title="谈一谈深拷贝与浅拷贝">https://www.xjt5213.club/2019/07/31/谈一谈深拷贝与浅拷贝/</a>
+    <span class="copy-path" title="点击复制引用链接"><i style="cursor: pointer" class="fa fa-clipboard" data-clipboard-text="['s Blog | 谈一谈深拷贝与浅拷贝](https://www.xjt5213.club/2019/07/31/谈一谈深拷贝与浅拷贝/)" aria-label="复制成功"></i></span>
+  </li>
+
+  <!-- 版权声明 -->
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>
+    本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+
+<script>
+  var clipboard = new ClipboardJS('.fa-clipboard');
+  clipboard.on('success', function(target){
+    var message = document.createElement('div');
+    message.innerHTML = '<i class="fa fa-check-circle message-icon"></i><span class="message-content">' + target.trigger.getAttribute('aria-label') + '</span>';
+    swal({
+      content: message,
+      className: "copy-success-message",
+      timer: 1000,
+      button: false
+    });
+  });
+</script>
+      </div>
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/学习笔记/" rel="tag"><i class="fa fa-tag"></i> 学习笔记</a>
+          
+        </div>
+      
+
+      
+      
+        <div class="post-widgets">
         
-        
+
         
 
         
           
-          <div class="collection-title">
-            <h1 class="archive-year" id="archive-year-2019">2019</h1>
+          <div id="needsharebutton-postbottom">
+            <span class="btn">
+              <i class="fa fa-share-alt" aria-hidden="true"></i>
+            </span>
           </div>
         
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2019/07/31/谈一谈深拷贝与浅拷贝/" itemprop="url">
-              
-                <span itemprop="name">谈一谈深拷贝与浅拷贝</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-07-31T00:00:00+08:00" content="2019-07-31">
-          07-31
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
+        </div>
+      
       
 
-        
-        
-        
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/07/28/谈谈css hack/" rel="next" title="谈谈css hack">
+                <i class="fa fa-chevron-left"></i> 谈谈css hack
+              </a>
+            
+          </div>
 
-        
-        
+          <span class="post-nav-divider"></span>
 
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2019/07/28/谈谈css hack/" itemprop="url">
-              
-                <span itemprop="name">谈谈css hack</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-07-28T00:00:00+08:00" content="2019-07-28">
-          07-28
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
       
 
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2019/07/27/浅谈圣杯布局和双飞翼布局/" itemprop="url">
-              
-                <span itemprop="name">浅谈圣杯布局和双飞翼布局</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-07-27T00:00:00+08:00" content="2019-07-27">
-          07-27
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
       
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2019/07/27/浅谈JavaScript中的闭包/" itemprop="url">
-              
-                <span itemprop="name">浅谈JavaScript中的闭包</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-07-27T00:00:00+08:00" content="2019-07-27">
-          07-27
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
       
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2019/07/27/浅谈JavaScript中原型链，prototype和__proto__的关系/" itemprop="url">
-              
-                <span itemprop="name">浅谈JavaScript中原型链，prototype，__proto__的关系</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-07-27T00:00:00+08:00" content="2019-07-27">
-          07-27
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2019/07/27/vue实现组件间传值/" itemprop="url">
-              
-                <span itemprop="name">vue组件间传值</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-07-27T00:00:00+08:00" content="2019-07-27">
-          07-27
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2019/07/26/js事件冒泡及捕获/" itemprop="url">
-              
-                <span itemprop="name">js事件冒泡及事件捕获</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-07-26T00:00:00+08:00" content="2019-07-26">
-          07-26
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2019/07/26/v-model使用及标签绑定事件/" itemprop="url">
-              
-                <span itemprop="name">v-model是什么?怎么使用？vue中标签如何绑定事件</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-07-26T00:00:00+08:00" content="2019-07-26">
-          07-26
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2019/07/26/vuex使用方式/" itemprop="url">
-              
-                <span itemprop="name">vuex使用方式</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-07-26T00:00:00+08:00" content="2019-07-26">
-          07-26
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
-    </div>
+    </footer>
   </div>
   
   
   
+  </article>
 
-  
 
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -685,6 +659,17 @@
 
 
           
+
+  
+    <div class="comments" id="comments">
+      
+        <div id="gitment-container"></div>
+      
+    </div>
+
+  
+
+
 
         </div>
         
@@ -705,8 +690,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -812,6 +806,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#JavaScript基本数据类型"><span class="nav-text">JavaScript基本数据类型</span></a></li></ol><li class="nav-item nav-level-2"><a class="nav-link" href="#1-浅拷贝的实现"><span class="nav-text">1. 浅拷贝的实现</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-1-简单的引用复制"><span class="nav-text">1.1 简单的引用复制</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-2-Object-assign"><span class="nav-text">1.2 Object.assign()</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-深拷贝的实现"><span class="nav-text">2. 深拷贝的实现</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#2-1-Array的slice和concat方法"><span class="nav-text">2.1 Array的slice和concat方法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-2-JSON对象的parse和stringify"><span class="nav-text">2.2 JSON对象的parse和stringify</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#区别："><span class="nav-text">区别：</span></a></li></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -976,6 +986,10 @@
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
